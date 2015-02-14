@@ -1,0 +1,59 @@
+.slideshow-container {
+  @include span-columns(12);
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+
+$album:
+  '0-Slide-Meet-The-Locals',
+  '1-Slide-Discover-Diversity',
+  '2-Slide-Explore-Ecuadorian-Culture',
+  '3-Slide-Change-Your-Perspective',
+  '4-Slide-Try-New-Things';
+
+$i: 0;
+@each $photo in $album {
+  .slide-#{$i} {
+    background: url(https://s3.amazonaws.com/bridge-to-ecuador/public/#{$photo}.jpg) no-repeat center center;
+  }
+  $i: $i + 1;
+}
+
+  .slideshow {
+    position: relative;
+    @include user-select(none);
+    display: block;
+    max-width: 620px;
+    height: 360px;
+    margin: 0px auto 20px auto;
+    overflow: hidden;
+    background-size: contain;
+    background-color: transparent;
+    @include media($small-screen) {
+      height: 510px;
+      background-color: black;
+    }
+  }
+}
+
+.advance-left, .advance-right {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  position: relative;
+  &:hover {
+    color: $dark-gray;
+  }
+}
+
+.advance-left {
+  top: 50%;
+  margin-top: -24px;
+}
+
+.advance-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -24px;
+}

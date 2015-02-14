@@ -1,0 +1,83 @@
+.testimonials {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $testimonial-gutter: 1.4em;
+  $testimonial-image-padding: 0;
+  $testimonial-image-width: 4em;
+  $testimonial-color: $base-font-color;
+  $testimonial-background: lighten($base-accent-color, 15%);
+  $testimonial-detail-color: transparentize($testimonial-color, 0.5);
+  $testimonial-image-vert-alignment: middle;
+
+  height: inherit;
+  overflow: visible;
+
+
+  @include media($medium-screen) {
+    /*TODO create height variable so that always same as slideshow height*/
+    height: 510px;
+    overflow: scroll;
+  }
+
+  .testimonial {
+    display: table;
+    margin-bottom: 1em;
+    width: 100%;
+    &:not(:last-child){
+      border-bottom: 1px solid transparentize($testimonial-color, 0.9);
+    }
+
+    .testimonial-image,
+    .testimonial-content {
+      display: table-cell;
+      vertical-align: $testimonial-image-vert-alignment;
+    }
+
+    .testimonial-image {
+      padding-right: $testimonial-gutter;
+
+      > img {
+        border-radius: $base-border-radius;
+        display: block;
+        height: auto;
+        max-width: none;
+        padding: $testimonial-image-padding;
+        width: $testimonial-image-width;
+        @include media($medium-screen) {
+          display: none;
+        }
+      }
+
+      .testimonial-reverse-order & {
+        padding-right: 0;
+        padding-left: 10px;
+      }
+    }
+
+    .testimonial-content {
+      width: 100%;
+
+      h1 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0;
+      }
+
+      p {
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
+      }
+
+      p.testimonial-detail {
+        color: $testimonial-detail-color;
+        font-size: 0.9em;
+        font-style: italic;
+      }
+    }
+}
+
+}

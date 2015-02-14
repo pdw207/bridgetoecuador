@@ -1,0 +1,13 @@
+h3.title {
+  background: black;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  margin: 50px auto;
+  width: auto;
+  padding: 10px 20px;
+  opacity: 0.3;
+  @include media($medium-screen) {
+    width: 800px;
+  }
+}

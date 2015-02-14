@@ -1,0 +1,56 @@
+//eliminate white space below footer
+#page_container {
+	position: relative;
+  height: inherit;
+  min-height: 100vh;
+  background-color: #efefef;
+}
+
+.section-container {
+  @include outer-container;
+  overflow: hidden;
+  @include media($medium-screen) {
+    margin-top: 50px;
+  }
+}
+
+#body, #side_body {
+  padding: 20px;
+  background: #fff;
+  @include span-columns(12);
+}
+
+//only split screen on medium screens if side_body is present
+#body:not(:last-child) {
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+}
+
+#side_body {
+  @include media($medium-screen) {
+    @include span-columns(4);
+  }
+}
+
+.show-page {
+  padding-top: 50px;
+}
+
+.context {
+  margin-bottom: $footer-height * 2;
+}
+
+.desktop {
+  display: none;
+  @include media($medium-screen) {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+  @include media($medium-screen) {
+    display: none;
+  }
+}

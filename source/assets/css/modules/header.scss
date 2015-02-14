@@ -1,0 +1,42 @@
+.main-nav {
+  @include user-select(none);
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff;
+}
+
+.main-nav-inner {
+  width: 80%;
+  margin: 20px auto 0 auto;
+
+  nav {
+    padding-bottom: 10px;
+  }
+
+  @include media($medium-screen) {
+    padding: 0;
+  }
+}
+
+.logo {
+  height: 40px;
+
+  @include media($medium-screen) {
+    height: 100px;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  text-transform: uppercase;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+  color: black;
+
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+

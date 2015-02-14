@@ -1,0 +1,52 @@
+.banner-wrapper {
+  position: relative;
+  @include user-select(none);
+  width: 100%; /* for IE 6 */
+
+  h2 {
+    font-family: $sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    br {
+      display: none;
+    }
+
+    span {
+      color: white;
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      padding: 6px 30px;
+
+      &.spacer {
+        display: none;
+      }
+    }
+
+    @include media($medium-screen) {
+    text-align: left;
+
+    br {
+      display: block;
+    }
+      line-height: 50px;
+      span {
+        font-size: 25px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      span.spacer {
+        display: inline-block;
+        background: none;
+        padding: 15px;
+      }
+    }
+  }
+}
+
