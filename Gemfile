@@ -5,6 +5,9 @@ gem "middleman-favicon-maker"
 gem "middleman-livereload"
 gem "addressable"
 gem "rake"
-gem 'puma',      '~> 2.7'
-gem "rspec"
-gem "capybara"
+gem 'puma', '~> 2.7'
+
+group :development do
+  gem 'pry'
+  gem 'dotenv-rails'
+end

@@ -1,4 +1,5 @@
-# Middleman-Haml
+
+Uses Middleman-Haml, removed susy, and added rspec
 
 A Middleman 3.0 template using HTML5 boilerplate HAML, SCSS, and CoffeeScript
 ready to deploy to Heroku.

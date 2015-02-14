@@ -1,12 +1,6 @@
 #Livereload
 activate :livereload
 
-# Change Compass configuration
-compass_config do |config|
-  config.output_style = :compact
-  config.line_comments = false
-end
-
 ###
 # Page options, layouts, aliases and proxies
 ###
