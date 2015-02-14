@@ -6,6 +6,7 @@ gem "middleman-livereload"
 gem "addressable"
 gem "rake"
 gem 'puma', '~> 2.7'
+gem 'bourbon'
 
 group :development do
   gem 'pry'
