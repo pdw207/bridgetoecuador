@@ -7,6 +7,7 @@ gem "addressable"
 gem "rake"
 gem 'puma', '~> 2.7'
 gem 'bourbon'
+gem 'neat'
 
 group :development do
   gem 'pry'

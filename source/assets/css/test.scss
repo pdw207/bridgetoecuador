@@ -1,3 +1,7 @@
 body {
 	@include background(linear-gradient(red, green) left repeat);
+  @include outer-container;
+  p{
+  @include span-columns(6);
+  }
 }
