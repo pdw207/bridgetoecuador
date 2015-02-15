@@ -1,0 +1,23 @@
+%ul.accordion-tabs-minimal
+  %li.tab-header-and-content
+    %a.tab-link.is-active{:href => "javascript:void(0)"}= t('programs.tab-heading.information')
+    .tab-content
+      %p= information
+  -unless schedule.blank?
+    %li.tab-header-and-content
+      %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.schedule')
+      .tab-content
+        %table
+          -schedule.each do |line|
+            %tr
+              %td= line
+  -unless costs.blank?
+    %li.tab-header-and-content
+      %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.costs')
+      .tab-content
+        %p=costs
+  -unless trips.blank?
+    %li.tab-header-and-content
+      %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.trips')
+      .tab-content
+        %p=trips

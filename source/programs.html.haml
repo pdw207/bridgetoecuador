@@ -3,4 +3,15 @@ title: Bridge To Ecuador
 description: Schedule a Trip to Ecuador
 ---
 
-=partial "shared/banner", locals: { photo: "Banner-4-Cuenca-Steps", line_1: "Experience", line_2: "Ecuador"}
+=partial "shared/banner", locals: { photo: "Banner-4-Cuenca-Steps", line_1: t('programs.headline_1'), line_2: t('programs.headline_2')}
+
+
+- data.programs.programs.each_with_index do |program, index|
+  .program
+    .program.slideshow= image_tag program.image
+    .highlights
+      %ul
+        -program.highlights.each do |highlight|
+          %li= highlight
+    %h2= program.title
+    =partial "shared/tabs", locals: { information: program.info , schedule: program.schedule ,costs: program.costs, trips: program.trips}
