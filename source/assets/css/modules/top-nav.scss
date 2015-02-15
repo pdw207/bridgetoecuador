@@ -4,6 +4,10 @@
   overflow: hidden;
   text-align: center;
 
+  .submenu {
+    display: none;
+  }
+
   li {
     display: block;
     margin-right: 10px;
@@ -19,9 +23,11 @@
       text-decoration: none;
       color: $dark-gray;
     }
+
     &.selected a, a:hover {
       background: #CCC;
     }
+
   }
 }
 

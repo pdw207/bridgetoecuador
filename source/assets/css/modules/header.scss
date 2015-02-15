@@ -5,7 +5,6 @@ header.main-header {
   z-index: 5;
   width: 100%;
   background-color: #fff;
-  @include animation(fadeIn 1.0s ease-in);
 
   @include media($medium-screen) {
     nav {
@@ -30,7 +29,6 @@ header.main-header {
 
 .logo {
   height: 40px;
-
   @include media($medium-screen) {
     height: 100px;
   }
@@ -39,9 +37,8 @@ header.main-header {
 .fix-header {
 
   @include media($medium-screen) {
-    $fix-header-height: 50px;
-
-    height: $fix-header-height;
+    $fix-header-height: 70px;
+    max-height: $fix-header-height;
     background-color: white;
 
     .main-header-inner {
@@ -49,7 +46,7 @@ header.main-header {
     }
 
     .main-header-inner, nav, ul, li, a {
-      height: inherit;
+      max-height: inherit;
     }
 
     img {
@@ -65,20 +62,10 @@ header.main-header {
 
 .static-header {
   @include media($medium-screen) {
-    @include animation-name(fadeIn);
-    top: auto;
+    max-height: 1000px;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    background-color: red;
-  }
-
-  100% {
-    background-color: blue;
-  }
-}
 
 .mobile-menu {
   position: absolute;
