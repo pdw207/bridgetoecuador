@@ -5,15 +5,6 @@
   }
 }
 
-
-//eliminate white space below footer
-#page_container {
-	position: relative;
-  height: inherit;
-  min-height: 100vh;
-  background-color: #efefef;
-}
-
 .section-container {
   @include outer-container;
   overflow: hidden;
@@ -26,6 +17,14 @@
   padding: 20px;
   background: #fff;
   @include span-columns(12);
+}
+
+//eliminate white space below footer
+#page_container {
+	position: relative;
+  height: inherit;
+  min-height: 100vh;
+  background-color: #efefef;
 }
 
 //only split screen on medium screens if side_body is present
