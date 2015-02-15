@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "middleman"
-gem "middleman-favicon-maker"
 gem "middleman-livereload"
 gem "addressable"
 gem "rake"
@@ -11,5 +10,5 @@ gem 'neat'
 
 group :development do
   gem 'pry'
-  gem 'dotenv-rails'
+  gem 'dotenv'
 end
