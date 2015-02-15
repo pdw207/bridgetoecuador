@@ -39,11 +39,12 @@ $i: 0;
 .advance-left, .advance-right {
   position: absolute;
   display: inline-block;
-  color: white;
   position: relative;
-  &:hover {
-    color: $dark-gray;
-  }
+  cursor: pointer;
+}
+
+.advance-left:hover #chevron-left, .advance-right:hover #chevron-right {
+  fill: #FBFAFA;
 }
 
 .advance-left {

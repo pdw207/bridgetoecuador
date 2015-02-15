@@ -1,0 +1,6 @@
+.card
+  .card-image= image_tag(photo +".jpg", :class => "feature")
+  -unless title == 'none'
+    .card-header= title
+  .card-copy
+    %p=body

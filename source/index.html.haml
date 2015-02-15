@@ -11,7 +11,19 @@ description: Schedule a Trip to Ecuador
   #body
     %p= t('home.note_from_director')
   .bio-photo
-    =image_tag "MariCuencaAge16-SM.jpg"
+    =image_tag "NataliaPortrait.jpg"
 
-%section.section-container.photos
+%section.section-container
   %h2.mobile-heading= t('home.programs')
+  .cards
+    =partial "shared/card", locals: {photo: "Programs-Homeland-Tours", title: t('home.tours.title'), body: t('home.tours.body') }
+    =partial "shared/card", locals: {photo: "Programs-Camps", title: t('home.camps.title'), body: t('home.camps.body') }
+    =partial "shared/card", locals: {photo: "Programs-Community-Service", title: t('home.service.title'), body: t('home.service.body') }
+
+%section.section-container.inspire
+  %h2.mobile-heading= t('home.inspiration')
+  =partial 'shared/slideshow'
+  .testimonials
+    =partial 'shared/testimonial', locals: {quote: t('home.testimonials.first.quote'), person: t('home.testimonials.first.person')}
+    =partial 'shared/testimonial', locals: {quote: t('home.testimonials.second.quote'), person: t('home.testimonials.second.person')}
+

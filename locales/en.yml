@@ -10,4 +10,45 @@ en:
     headline_2: "Ecuador"
     heading: "Now Open: Registration for Spring 2015"
     note_from_director: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    program_heading: "Programs"
+    programs: "Programs"
+    tours:
+      title: "Homeland Tours"
+      body: "Adoptees can reconnect with their language and culture through specific programs for individuals or families with the option to conduct a birth family search"
+    camps:
+      title: "Camps"
+      body: "Teenagers can spend school vacations making new friends, learning Spanish, traveling to exciting new places, and helping others in a challenging yet safe environment."
+    service:
+      title: "Community Service"
+      body: "Earn community service credit through volunteer experiences that range from caring for orphaned children to teaching art and small construction projects."
+    inspiration: "Inspiration"
+    testimonials:
+      first:
+        quote: "The summer I spent in Ecuador was a life-changing experience for me. Natalia could not have planned a better trip - from the host family stay and language immersion to the volunteer and cultural activities, I have never felt closer to my Latin American Roots. Thank you!"
+        person: "Marisa"
+      second:
+        quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ul"
+        person: "Lorem ipsum"
+  why_ecuador:
+    heading: "Ecuador: A Megadiverse Country"
+    intro: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    biodiversity:
+      title: "Biodiversity"
+      cards:
+        first: "Explore the Sierra region boasting snow-capped mountains, volcanoes, waterfalls, hot springs, cloud forests, indigenous markets, colonial towns, and safe modern cities."
+        second: "The Ruta del Sol (Route of the Sun) runs along the Pacific ocean in the Costa region with mangrove forests, humpback whales, surfing, and miles of beaches."
+        third: "The thirteen main islands of the Galápagos feature a stunning array of iguanas, blue footed boobies, giant tortoises, flamingos, and penguins along with the Darwin Research Station."
+    culture:
+      title: "Culture"
+      cards:
+        first: "Each region has its own thriving cultural scene with artists, musicians, and chefs representing the mix of old and new as well as native and European flavors."
+        second: "Straddle the northern and southern hemispheres at the Monument to the Equator or visit museums in major cities such as Quito, Cuenca, Loja, and Guayaquil."
+        third: "Learn Spanish from a qualified instructor in formal or informal settings as you are immersed in the vibrant city life."
+    people:
+      title: "People"
+      cards:
+        first: "Ecuador is a multi-ethnic society and its people are warm and hospitable as they treat you like a member of the family when you are invited into their home."
+        second: "Meet indigenous artists selling their wares in the Otavalo market, share the beach with fishermen, or play games with school children."
+        third: "Ecuadorians are proud of their country and will be happy to share its celebrations, local foods, history, and arts with you."
+
+
+
