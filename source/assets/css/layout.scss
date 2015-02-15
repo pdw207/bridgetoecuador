@@ -1,3 +1,11 @@
+.main {
+  margin-top: 68px;
+  @include media($medium-screen) {
+    margin-top: 152px;
+  }
+}
+
+
 //eliminate white space below footer
 #page_container {
 	position: relative;

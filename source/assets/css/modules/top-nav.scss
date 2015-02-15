@@ -41,6 +41,11 @@
     background: #CCC;
   }
 
+  .phone {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+  }
+
   @include media($medium-screen) {
     position: absolute;
     top: 0;
@@ -53,5 +58,6 @@
         padding: 5px;
       }
     }
+
   }
 }
