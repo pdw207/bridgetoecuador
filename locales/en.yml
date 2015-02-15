@@ -36,7 +36,7 @@ en:
       schedule: "Sample Schedule"
       costs: "Included Costs"
       trips: "Weekend Trips"
-  service:
+  request_info:
     headline_1: "Start Your"
     headline_2: "Adventure"
   why_ecuador:
