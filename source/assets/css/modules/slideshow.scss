@@ -3,17 +3,60 @@
   @include media($medium-screen) {
     @include span-columns(8);
   }
-
-$album:
+// TODO: REFACTOR each loops and combine with data yml info
+$home-album:
   '0-Slide-Meet-The-Locals',
   '1-Slide-Discover-Diversity',
   '2-Slide-Explore-Ecuadorian-Culture',
   '3-Slide-Change-Your-Perspective',
   '4-Slide-Try-New-Things';
 
+$service-album:
+  '0-Slide-CommunityService',
+  '1-Slide-CommunityService',
+  '2-Slide-CommunityService';
+
+$camps-album:
+  '0-Slide-Camps',
+  '1-Slide-Camps',
+  '2-Slide-Camps',
+  '3-Slide-Camps',
+  '4-Slide-Camps',
+  '5-Slide-Camps';
+
+$culture-album:
+  '0-Slide-Culture',
+  '1-Slide-Culture',
+  '2-Slide-Culture';
+
 $i: 0;
-@each $photo in $album {
-  .slide-#{$i} {
+
+@each $photo in $home-album {
+  .home-slide-#{$i} {
+    background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
+  }
+  $i: $i + 1;
+}
+
+$i: 0;
+@each $photo in $service-album {
+  .service-slide-#{$i} {
+    background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
+  }
+  $i: $i + 1;
+}
+
+$i: 0;
+@each $photo in $camps-album {
+  .camps-slide-#{$i} {
+    background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
+  }
+  $i: $i + 1;
+}
+
+$i: 0;
+@each $photo in $culture-album {
+  .culture-slide-#{$i} {
     background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
   }
   $i: $i + 1;

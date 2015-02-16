@@ -1,4 +1,4 @@
 .slideshow-container
-  .slideshow.slide-0{"data-current-slide" => "0", "data-slides" => total_slides }
+  .slideshow{"data-set" => set, "data-current-slide" => "0", "data-slides" => total_slides, :class => "#{set}-slide-0"}
     %span.advance-left= partial "assets/svg/chevron-left.svg"
     %span.advance-right= partial "assets/svg/chevron-right.svg"

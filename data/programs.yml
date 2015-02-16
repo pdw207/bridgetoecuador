@@ -1,7 +1,7 @@
 programs:
   - title: Community Service
     tag: service
-    image: CommunityService-1.jpg
+    slides: 3
     highlights:
       - Community Service Trips can be customized for each individual or school/religious group.
       - Contact us to customize your trip today!
@@ -23,7 +23,7 @@ programs:
 
   - title: Vacation Camps
     tag: camps
-    image: Camps-1.jpg
+    slides: 6
     highlights:
       - <b>Spring Break Session</b>
       - march 28 - april 4
@@ -69,8 +69,8 @@ programs:
       - "For all the programs we ask for an initial deposit required after the registration and authorization form has been completed and sent to us confirming participation in one of our programs."
 
   - title: Homeland Tours
-    tag: tours
-    image: HomelandTours-1.jpg
+    tag: culture
+    slides: 3
     highlights:
       - Homeland Tours are customized for each individual, group and/or family and may include the option of a Birth Family Search.
       - Homeland Tours and Birth Family Searches are available throughout the year.

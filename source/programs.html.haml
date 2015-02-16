@@ -8,7 +8,7 @@ description: Schedule a Trip to Ecuador
 - data.programs.programs.each_with_index do |program, index|
   %section.section-container{id: program.tag}
     %h2.heading= program.title
-    .program-slideshow= image_tag program.image
+    =partial 'shared/slideshow', locals: {set: program.tag, total_slides: program.slides}
     .highlights
       %ul
         -program.highlights.each do |highlight|
