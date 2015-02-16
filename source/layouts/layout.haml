@@ -18,29 +18,30 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Cutive", :rel => "stylesheet", :type => "text/css"}/
   %body
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
-    %header.main-header
-      .main-header-inner
-        =link_to '/' do
-          = image_tag "logo.png", alt: "Bridge to Ecuador", class: "logo"
-        = link_to "javascript:void(0)", class: "mobile-menu" do
-          =partial "assets/svg/hamburger.svg"
-        %nav
-          %ul.main-menu
-            %li.more
-              = link_to t('navigation.programs'),'/programs.html'
-              %ul.submenu
-                %li =link_to t('navigation.camps'), "javascript:void(0)"
-                %li =link_to t('navigation.comunity_service'), "javascript:void(0)"
-                %li =link_to t('navigation.homeland_tours'), "javascript:void(0)"
-            %li= link_to t('navigation.why_ecuador'), '/why_ecuador.html'
-            %li= link_to t('navigation.request_information'), '/request_info.html'
-            %li= link_to t('navigation.about_us'), '/about_us.html'
-          %ul.top-menu
-            %li= link_to t('navigation.create_a_custom_trip'), '/request_info.html'
-            %li
-              = link_to "tel:#{t('navigation.telephone')}" do
-                %span.phone= partial "assets/svg/phone.svg"
-                = t 'navigation.telephone'
+    / %header.main-header
+    /   .main-header-inner
+    /     =link_to '/' do
+    /       = image_tag "logo.png", alt: "Bridge to Ecuador", class: "logo"
+    /     = link_to "javascript:void(0)", class: "mobile-menu" do
+    /       =partial "assets/svg/hamburger.svg"
+    /     %nav
+    /       %ul.main-menu
+    /         %li.more
+    /           = link_to t('navigation.programs'),'/programs.html'
+    /           %ul.submenu
+    /             %li =link_to t('navigation.camps'), "javascript:void(0)"
+    /             %li =link_to t('navigation.comunity_service'), "javascript:void(0)"
+    /             %li =link_to t('navigation.homeland_tours'), "javascript:void(0)"
+    /         %li= link_to t('navigation.why_ecuador'), '/why_ecuador.html'
+    /         %li= link_to t('navigation.request_information'), '/request_info.html'
+    /         %li= link_to t('navigation.about_us'), '/about_us.html'
+    /       %ul.top-menu
+    /         %li= link_to t('navigation.create_a_custom_trip'), '/request_info.html'
+    /         %li
+    /           = link_to "tel:#{t('navigation.telephone')}" do
+    /             %span.phone= partial "assets/svg/phone.svg"
+    /             = t 'navigation.telephone'
+    = partial 'shared/navigation'
     .main
       = yield
     %footer

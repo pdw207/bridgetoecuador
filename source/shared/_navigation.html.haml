@@ -1,0 +1,26 @@
+%header.centered-navigation{:role => "banner"}
+  .centered-navigation-wrapper
+    =link_to '/', class: "mobile-logo" do
+      = image_tag "logo.png", alt: "Bridge to Ecuador"
+    = link_to "javascript:void(0)", class: "centered-navigation-mobile-menu", id: "js-centered-navigation-mobile-menu" do
+      =partial "assets/svg/hamburger.svg"
+    %nav{:role => "navigation"}
+      %ul#js-centered-navigation-menu.centered-navigation-menu.show
+        %li.nav-link.logo
+          =link_to '/' do
+            = image_tag "logo.png", alt: "Bridge to Ecuador"
+        %li.nav-link
+          = link_to t('navigation.why_ecuador'), '/why_ecuador.html'
+        %li.nav-link.more
+          %a{:href => "javascript:void(0)"}= t('navigation.programs')
+          %ul.submenu
+            %li
+              =link_to t('navigation.camps'), "/vacation_camps.html"
+            %li
+              =link_to t('navigation.community_service'), "/community_service.html"
+            %li
+              =link_to t('navigation.homeland_tours'), "/homeland_tours.html"
+        %li.nav-link
+          = link_to t('navigation.about_us'), '/about_us.html'
+        %li.nav-link
+          = link_to t('navigation.request_information'), '/request_info.html'
