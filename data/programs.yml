@@ -27,14 +27,13 @@ programs:
     tag: camps
     slides: 6
     highlights:
-      - <b>Spring Break Session</b>
-      - march 28 - april 4
-      - or
-      - april 4 - april 11
+      - <b>Spring Break Sessions 2015</b>
+      - March 28 - April 4
+      - April 4 - April 11
       - <b>Summer Camp Session 1</b>
-      - july 1 - july 15, 2015
+      - July 1 - July 15, 2015
       - <b>Summer Camp Session 2</b>
-      - july 16 - july 31, 2015
+      - July 16 - July 31, 2015
     info:
       - Located in the small and safe colonial city of Cuenca, the Bridge to Ecuador Summer Camp is an international adventure where campers aged 12-17 years old make new friends, improve Spanish skills, play sports, enjoy cultural activities, and participate in excursions and overnight camping trips.
       - Campers live with local host families who provide a safe and comfortable home away from home.
@@ -72,7 +71,7 @@ programs:
 
   - title: Homeland Tours
     slug: homeland_tours
-    tag: culture
+    tag: tours
     slides: 3
     highlights:
       - Homeland Tours are customized for each individual, group and/or family and may include the option of a Birth Family Search.
@@ -81,7 +80,7 @@ programs:
     info:
       - This special trip helps to acknowledge and validate the unique experience of being adopted.
       - The opportunity for a child to visit his or her birth country provides a stronger sense of identity and deeper ties to the birth culture, language, and people. Adoptees and their families can fill in the gaps of each adoptive family’s story, learning more about what it means to live between two cultures.
-      - Every Homeland Journey is customized for each individual, group or family and can include: tours to different parts of Ecuador (highlands/mountains, coast/beach, Amazon jungle, and/or the Galápagos islands.
+      - "Every Homeland Journey is customized for each individual, group or family and can include: tours to different parts of Ecuador (highlands/mountains, coast/beach, Amazon jungle, and/or the Galápagos islands."
 
 
 

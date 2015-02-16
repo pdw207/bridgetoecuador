@@ -24,10 +24,11 @@ $camps-album:
   '4-Slide-Camps',
   '5-Slide-Camps';
 
-$culture-album:
-  '0-Slide-Culture',
-  '1-Slide-Culture',
-  '2-Slide-Culture';
+$tours-album:
+  '0-HomelandTours',
+  '1-HomelandTours',
+  '2-HomelandTours',
+  '3-HomelandTours';
 
 $i: 0;
 
@@ -55,8 +56,8 @@ $i: 0;
 }
 
 $i: 0;
-@each $photo in $culture-album {
-  .culture-slide-#{$i} {
+@each $photo in $tours-album {
+  .tours-slide-#{$i} {
     background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
   }
   $i: $i + 1;

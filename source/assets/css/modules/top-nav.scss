@@ -4,6 +4,10 @@
   overflow: hidden;
   text-align: center;
 
+  .more:hover > .submenu{
+    display: block;
+  }
+
   .submenu {
     display: none;
   }
