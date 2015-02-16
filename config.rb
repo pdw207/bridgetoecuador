@@ -1,3 +1,7 @@
+require 'dotenv'
+require 'pry'
+Dotenv.load
+binding.pry
 #Livereload
 activate :livereload
 
@@ -62,3 +66,22 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+gem 'middleman-s3_sync'
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = ENV['S3_BUCKET'] # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV['S3_KEY']
+  s3_sync.aws_secret_access_key      = ENV['S3_SECRET']
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+  s3_sync.prefix                     = ''
+  s3_sync.version_bucket             = false
+end
+
