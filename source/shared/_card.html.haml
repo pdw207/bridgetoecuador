@@ -1,5 +1,9 @@
 .card
-  .card-image= image_tag(photo +".jpg", :class => "feature")
+  -if link == "none"
+    .card-image= image_tag(photo +".jpg", :class => "feature")
+  -else
+    =link_to "/#{link}.html" do
+      .card-image= image_tag(photo +".jpg", :class => "feature")
   -unless title == 'none'
     .card-header= title
   .card-copy

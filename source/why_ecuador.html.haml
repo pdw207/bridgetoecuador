@@ -13,5 +13,5 @@ description: Schedule a Trip to Ecuador
     %h2.heading=section.category
     .cards
       -section.card.each do |card|
-        =partial "shared/card", locals: {photo: card.image, title: "none", body: card.body }
+        =partial "shared/card", locals: {photo: card.image, link: "none", title: "none", body: card.body }
 
