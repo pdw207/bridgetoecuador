@@ -233,3 +233,11 @@
           %tr
             %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
               %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}/
+.modal
+  %label{:for => "modal-1"}
+    .modal-trigger Sample Submit
+  %input#modal-1.modal-state{:type => "checkbox"}/
+  .modal-window
+    .modal-inner
+      %label.modal-close{:for => "modal-1"}
+      %h2.modal-into Your form has been submited. Thank you for your interest in Bridge to Ecuador. We will be in contact with you shortly.
