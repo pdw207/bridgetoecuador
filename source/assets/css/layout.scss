@@ -1,4 +1,5 @@
 .main {
+  //offset fixed header
   margin-top: 68px;
   @include media($medium-screen) {
     margin-top: 130px;
@@ -7,46 +8,56 @@
 
 .section-container {
   @include outer-container;
+  max-width: 90%;
   overflow: hidden;
-  @include media($medium-screen) {
+  clear: both;
     margin-top: 50px;
+  &:last-child {
+    margin-bottom: $footer-height * 2;
   }
 }
 
-#body, #side_body {
-  padding: 20px;
-  background: #fff;
-  @include span-columns(12);
-}
-
-//eliminate white space below footer
-#page_container {
-	position: relative;
-  height: inherit;
-  min-height: 100vh;
-  background-color: #efefef;
-}
-
-//only split screen on medium screens if side_body is present
-#body:not(:last-child) {
+.body {
+  margin-top: 10px;
   @include media($medium-screen) {
     @include span-columns(8);
+    @include shift(2);
   }
 }
 
-#side_body {
+.bio {
   @include media($medium-screen) {
-    @include span-columns(4);
+    @include span-columns(8);
+    @include shift(2);
   }
 }
 
-.show-page {
-  padding-top: 50px;
+.bio-text {
+  padding: 20px;
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(5 of 8);
+  }
 }
 
-.inspire {
-  margin-bottom: $footer-height * 2;
+.bio-photo {
+  @include media($medium-screen) {
+    @include span-columns(3 of 8);
+  }
 }
+
+.highlights {
+  @extend .testimonials;
+}
+
+.tabs {
+  max-width: 800px;
+  margin: auto;
+  clear: both;
+}
+
+// Utility Classes
 
 .desktop {
   display: none;

@@ -5,13 +5,12 @@ description: Schedule a Trip to Ecuador
 
 =partial "shared/banner", locals: { photo: "Banner-4-Cuenca-Steps", line_1: t('programs.headline_1'), line_2: t('programs.headline_2')}
 
-
 - data.programs.programs.each_with_index do |program, index|
-  .program
-    .program.slideshow= image_tag program.image
+  %section.section-container{id: program.tag}
+    %h2.heading= program.title
+    .program-slideshow= image_tag program.image
     .highlights
       %ul
         -program.highlights.each do |highlight|
           %li= highlight
-    %h2= program.title
-    =partial "shared/tabs", locals: { information: program.info , schedule: program.schedule ,costs: program.costs, trips: program.trips}
+    .tabs=partial "shared/tabs", locals: { information: program.info , schedule: program.schedule ,costs: program.costs, trips: program.trips}

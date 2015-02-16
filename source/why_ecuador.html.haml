@@ -3,13 +3,13 @@ title: Bridge to Ecuador - Programs
 description: Schedule a Trip to Ecuador
 ---
 
-=partial "shared/banner", locals: { photo: "Banner-2-Galapagos-SeaLion", line_1: "Ecuador:", line_2: "A Megadiverse Country"}
+=partial "shared/banner", locals: { photo: "Banner-2-Galapagos-SeaLion", line_1: t('why_ecuador.headline_1'), line_2: t('why_ecuador.headline_2')}
+
+%section.section-container.body
+  %p.intro= t('why_ecuador.intro')
 
 %section.section-container
-  #body
-    %p= t('why_ecuador.intro')
-%section.section-container
-  %h2.category-heading= t('why_ecuador.biodiversity.title')
+  %h2.heading= t('why_ecuador.biodiversity.title')
   .cards
     =partial "shared/card", locals: {photo: "Diversity-1", title: "none", body: t('why_ecuador.biodiversity.cards.first') }
     =partial "shared/card", locals: {photo: "Diversity-2", title: "none", body: t('why_ecuador.biodiversity.cards.second') }

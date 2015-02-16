@@ -9,7 +9,7 @@ header.main-header {
   @include media($medium-screen) {
     nav {
       display: inline-block;
-      margin-left: 100px;
+      margin-left: 50px;
     }
   }
 }

@@ -14,7 +14,7 @@ $album:
 $i: 0;
 @each $photo in $album {
   .slide-#{$i} {
-    background: url(https://s3.amazonaws.com/bridge-to-ecuador/public/#{$photo}.jpg) no-repeat center center;
+    background: url(/assets/img/#{$photo}.jpg) no-repeat center center;
   }
   $i: $i + 1;
 }

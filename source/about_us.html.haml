@@ -1,0 +1,17 @@
+---
+title: Bridge To Ecuador - About Us
+---
+
+=partial "shared/banner", locals: { photo: "Banner-5-Map", line_1: t('about_us.headline_1'), line_2: t('about_us.headline_2')}
+
+%section.section-container
+  %h2.heading= t('about_us.heading')
+  %hr
+  .bio
+    .bio-text
+      %h3 Natalia Lopez
+      %h4 Executive Director
+      %hr
+      %p= t('about_us.note_from_director')
+    .bio-photo
+      =image_tag "NataliaPortraitBW.jpg"

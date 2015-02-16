@@ -5,12 +5,9 @@ description: Schedule a Trip to Ecuador
 
 =partial "shared/banner", locals: { photo: "Banner-1-Walk-to-Beach", line_1: t('home.headline_1'), line_2: t('home.headline_2')}
 
-%section.section-container
-  %h2.title= t('home.heading')
-  #body
-    %p= t('home.note_from_director')
-  .bio-photo
-    =image_tag "NataliaPortrait.jpg"
+%section.section-container.body
+  %h2.lead-title= t('home.heading')
+  %p.intro.lead-intro= t('home.intro')
 
 %section.section-container
   %h2.mobile-heading= t('home.programs')
@@ -19,9 +16,9 @@ description: Schedule a Trip to Ecuador
     =partial "shared/card", locals: {photo: "Programs-Camps", title: t('home.camps.title'), body: t('home.camps.body') }
     =partial "shared/card", locals: {photo: "Programs-Community-Service", title: t('home.service.title'), body: t('home.service.body') }
 
-%section.section-container.inspire
+%section.section-container
   %h2.mobile-heading= t('home.inspiration')
-  =partial 'shared/slideshow'
+  =partial 'shared/slideshow', locals: {total_slides: "5"}
   .testimonials
     =partial 'shared/testimonial', locals: {quote: t('home.testimonials.first.quote'), person: t('home.testimonials.first.person')}
     =partial 'shared/testimonial', locals: {quote: t('home.testimonials.second.quote'), person: t('home.testimonials.second.person')}

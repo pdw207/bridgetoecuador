@@ -2,7 +2,8 @@
   %li.tab-header-and-content
     %a.tab-link.is-active{:href => "javascript:void(0)"}= t('programs.tab-heading.information')
     .tab-content
-      %p= information
+      -information.each do |paragraph|
+        %p= paragraph
   -unless schedule.blank?
     %li.tab-header-and-content
       %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.schedule')
@@ -15,9 +16,13 @@
     %li.tab-header-and-content
       %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.costs')
       .tab-content
-        %p=costs
+        %ul
+          -costs.each do |list_item|
+            %li= list_item
+
   -unless trips.blank?
     %li.tab-header-and-content
       %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.trips')
       .tab-content
-        %p=trips
+        -trips.each do |paragraph|
+          %p= paragraph

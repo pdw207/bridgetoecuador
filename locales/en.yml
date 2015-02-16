@@ -2,6 +2,7 @@ en:
   navigation:
     programs: "Programs"
     why_ecuador: "Why Ecuador"
+    about_us: "About Us"
     request_information: "Request Information"
     create_a_custom_trip: "Create a Custom Trip"
     telephone: "617-657-4117"
@@ -9,7 +10,7 @@ en:
     headline_1: "Experience"
     headline_2: "Ecuador"
     heading: "Now Open: Registration for Spring 2015"
-    note_from_director: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    intro: "Bridge to Ecuador connects young people to Ecuadorian culture through unique and rewarding education, adventure, and service opportunities; specializing in building a bridge for Ecuadorian adoptees to their birth country. Through our programs, all youth can learn Spanish, travel, and give back to the community."
     programs: "Programs"
     tours:
       title: "Homeland Tours"
@@ -28,6 +29,11 @@ en:
       second:
         quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ul"
         person: "Lorem ipsum"
+  about_us:
+    headline_1: "Meet"
+    headline_2: "our Leadership"
+    heading: "Meet our Director"
+    note_from_director: "A native Ecuadorian, Natalia Lopez has dedicated her career to working with youth and families. For 20 years she helped to place children for adoption from the south of Ecuador, including the cities of Cuenca and Loja, to the United States, Denmark, and Italy. Natalia has worked with many different orphanages in Cuenca and was the Director of Casa Hogar Fafecorp for 5 years. In 2012 she became the Director of Four Rivers Camps and is now leading innovative social, cultural, and educational programs as the Director of Bridge to Ecuador. Natalia and her family have been hosting international students from the United States, China, and across Europe for over 20 years."
   programs:
     headline_1: "Build your"
     headline_2: "Bridge"
@@ -42,7 +48,7 @@ en:
   why_ecuador:
     headline_1: "Ecuador:"
     headline_2: "A Megadiverse Country"
-    intro: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    intro: "One of only seventeen countries in the world classified as megadiverse, Ecuador is home to four distinct regions. From the snow-capped Andes and the rainforests of the Amazon to the fishing villages on the coast to the enthralling Galápagos Islands, Ecuador has it all. Yasuní National Park in the Amazonía region was declared a UNESCO Biosphere Reserve and is home to hundreds of plant, bird, and fish species."
     biodiversity:
       title: "Biodiversity"
       cards:
