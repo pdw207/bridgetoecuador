@@ -2,4 +2,7 @@
   <%= image_tag(photo + "-SM.jpg", :class => "banner mobile") %>
   <%= image_tag(photo +".jpg", :class => "banner desktop") %>
   <h1><span><%= line_1 %><span class="spacer"></span><br><span class="spacer"></span><%= line_2 %></span></h1>
+  <%- unless cover.blank? %>
+    <h2 class="cover desktop"><%=cover%></h2>
+  <%- end%>
 </div>
