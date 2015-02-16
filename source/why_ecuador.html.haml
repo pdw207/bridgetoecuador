@@ -9,21 +9,9 @@ description: Schedule a Trip to Ecuador
   %p.intro= t('why_ecuador.intro')
 
 %section.section-container
-  %h2.heading= t('why_ecuador.biodiversity.title')
-  .cards
-    =partial "shared/card", locals: {photo: "Diversity-1", title: "none", body: t('why_ecuador.biodiversity.cards.first') }
-    =partial "shared/card", locals: {photo: "Diversity-2", title: "none", body: t('why_ecuador.biodiversity.cards.second') }
-    =partial "shared/card", locals: {photo: "Diversity-3",title: "none", body: t('why_ecuador.biodiversity.cards.third') }
-  %h2.category-heading= t('why_ecuador.culture.title')
-  .cards
-    =partial "shared/card", locals: {photo: "Culture-1", title: "none", body: t('why_ecuador.culture.cards.first') }
-    =partial "shared/card", locals: {photo: "Culture-2", title: "none", body: t('why_ecuador.culture.cards.second') }
-    =partial "shared/card", locals: {photo: "Culture-3", title: "none", body: t('why_ecuador.culture.cards.third') }
-  %h2.category-heading= t('why_ecuador.people.title')
-  .cards
-    =partial "shared/card", locals: {photo: "People-1", title: "none", body: t('why_ecuador.people.cards.first') }
-    =partial "shared/card", locals: {photo: "People-2", title: "none", body: t('why_ecuador.people.cards.second') }
-    =partial "shared/card", locals: {photo: "People-3", title: "none", body: t('why_ecuador.people.cards.third') }
-
-
+  -data.cards.each do |section|
+    %h2.heading=section.category
+    .cards
+      -section.card.each do |card|
+        =partial "shared/card", locals: {photo: card.image, title: "none", body: card.body }
 
