@@ -1,14 +1,16 @@
-%header.centered-navigation{:role => "banner"}
-  .centered-navigation-wrapper
+%header.navigation{:role => "banner"}
+  .navigation-wrapper
     =link_to '/', class: "mobile-logo" do
       = image_tag "logo.png", alt: "Bridge to Ecuador"
-    = link_to "javascript:void(0)", class: "centered-navigation-mobile-menu", id: "js-centered-navigation-mobile-menu" do
+    = link_to "javascript:void(0)", class: "navigation-mobile-menu", id: "js-navigation-mobile-menu" do
       =partial "assets/svg/hamburger.svg"
     %nav{:role => "navigation"}
-      %ul#js-centered-navigation-menu.centered-navigation-menu.show
+      %ul#js-navigation-menu.navigation-menu.show
         %li.nav-link.logo
           =link_to '/' do
             = image_tag "logo.png", alt: "Bridge to Ecuador"
+        %li.nav-link.mobile
+          = link_to t('navigation.home'), '/'
         %li.nav-link
           = link_to t('navigation.why_ecuador'), '/why_ecuador.html'
         %li.nav-link.more
@@ -24,3 +26,7 @@
           = link_to t('navigation.about_us'), '/about_us.html'
         %li.nav-link
           = link_to t('navigation.request_information'), '/request_info.html'
+        %li.nav-link
+          = link_to "tel:#{t('navigation.telephone')}" do
+            %span.phone= partial "assets/svg/phone.svg"
+            = t 'navigation.telephone'

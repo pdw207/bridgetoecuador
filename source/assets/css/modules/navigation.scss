@@ -1,4 +1,4 @@
-.centered-navigation {
+.navigation {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
@@ -6,23 +6,25 @@
   $base-font-color: $dark-gray !default;
   //////////////////////////////////////////////////////////////////////////////////
 
-  $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #fff;
-  $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 130px;
-  $centered-navigation-item-padding: 1em;
-  $centered-navigation-submenu-padding: 1em;
-  $centered-navigation-submenu-width: 12em;
-  $centered-navigation-item-nudge: 2.2em;
+  $navigation-padding: 1em;
+  $navigation-logo-height: 2em;
+  $navigation-background: #fff;
+  $navigation-color: transparentize($base-font-color, 0.3);
+  $navigation-color-hover: $base-font-color;
+  $navigation-height: 80px;
+  $navigation-item-padding: 1em;
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
+  $navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
-  position: fixed;
-  top: 0;
+  @include media($medium-screen) {
+    position: fixed;
+    top: 0;
+  }
 
-  background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6%);
-  max-height: $centered-navigation-height;
+  background-color: $navigation-background;
+  border-bottom: 1px solid darken($navigation-background, 6%);
+  max-height: $navigation-height;
   width: 100%;
   z-index: 9999;
 
@@ -31,12 +33,12 @@
   .mobile-logo {
     display: inline;
     float: left;
-    max-height: $centered-navigation-height;
-    padding-left: $centered-navigation-padding;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding;
 
     img {
-      max-height: $centered-navigation-height;
-      padding: .8em 0;
+      max-height: $navigation-height;
+      padding: 1.2em 0;
     }
 
     @include media($horizontal-bar-mode) {
@@ -44,14 +46,14 @@
     }
   }
 
-  .centered-navigation-mobile-menu {
-    color: $centered-navigation-color;
+  .navigation-mobile-menu {
+    color: $navigation-color;
     display: block;
     float: right;
     font-weight: 700;
-    line-height: $centered-navigation-height;
+    line-height: $navigation-height;
     margin: 0;
-    padding-right: $centered-navigation-submenu-padding;
+    padding-right: $navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -61,13 +63,13 @@
 
     &:focus,
     &:hover {
-      color: $centered-navigation-color-hover;
+      color: $navigation-color-hover;
     }
   }
 
   // Nav menu
 
-  .centered-navigation-wrapper {
+  .navigation-wrapper {
     @include outer-container;
     @include clearfix;
     position: relative;
@@ -78,7 +80,7 @@
     }
   }
 
-  ul.centered-navigation-menu {
+  ul.navigation-menu {
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     clear: both;
     display: none;
@@ -101,39 +103,40 @@
 
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
-      margin-left: $centered-navigation-item-nudge;
+      margin-left: $navigation-item-nudge;
     }
   }
 
   ul li.nav-link {
-    background: $centered-navigation-background;
+    background: $navigation-background;
     display: block;
-    line-height: $centered-navigation-height;
+    line-height: $navigation-height;
     overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
+    padding-right: $navigation-submenu-padding;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 
     a {
-      color: $centered-navigation-color;
+      color: $navigation-color;
       display: inline-block;
       outline: none;
       text-decoration: none;
 
       &:focus,
       &:hover {
-        color: $centered-navigation-color-hover;
+        color: $navigation-color-hover;
       }
     }
 
     @include media($horizontal-bar-mode) {
       background: transparent;
       display: inline;
-      line-height: $centered-navigation-height;
+      text-align: right;
+      line-height: $navigation-height;
 
       a {
-        padding-right: $centered-navigation-item-padding;
+        padding-right: $navigation-item-padding;
       }
     }
   }
@@ -148,7 +151,7 @@
   }
 
   .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3 - 1em;
+    margin-bottom: -$navigation-logo-height / 3 - 1em;
     max-height: 4em;
   }
 
@@ -158,7 +161,7 @@
     padding-right: 0;
 
     @include media($large-screen) {
-      padding-right: $centered-navigation-submenu-padding;
+      padding-right: $navigation-submenu-padding;
     }
 
     > ul > li:first-child a  {
@@ -166,7 +169,7 @@
     }
 
     a {
-      margin-right: $centered-navigation-submenu-padding;
+      margin-right: $navigation-submenu-padding;
     }
 
     > a {
@@ -175,7 +178,7 @@
 
     > a:after {
       @include position(absolute, auto -0.4em auto auto);
-      color: $centered-navigation-color;
+      color: $navigation-color;
       content: "\25BE";
     }
   }
@@ -185,7 +188,7 @@
     padding-right: 0;
 
     a {
-      padding-right: $centered-navigation-submenu-padding;
+      padding-right: $navigation-submenu-padding;
     }
 
     > a {
@@ -193,14 +196,14 @@
       position: relative;
 
       @include media($large-screen) {
-        margin-right: $centered-navigation-submenu-padding;
+        margin-right: $navigation-submenu-padding;
       }
 
       &:after {
         content: "›";
         font-size: 1.2em;
         position: absolute;
-        right: $centered-navigation-submenu-padding / 2;
+        right: $navigation-submenu-padding / 2;
       }
     }
 
@@ -210,7 +213,7 @@
     }
 
     @include media($horizontal-bar-mode) {
-      padding-right: $centered-navigation-submenu-padding;
+      padding-right: $navigation-submenu-padding;
       position: relative;
     }
   }
@@ -220,14 +223,14 @@
     padding-left: 0;
 
     @include media($horizontal-bar-mode) {
-      left: -$centered-navigation-submenu-padding;
+      left: -$navigation-submenu-padding;
       position: absolute;
       top: 1.5em;
     }
 
     .submenu {
       @include media($horizontal-bar-mode) {
-        left: $centered-navigation-submenu-width - 0.2em;
+        left: $navigation-submenu-width - 0.2em;
         top: 0;
       }
     }
@@ -252,19 +255,21 @@
       }
 
       a {
-        background-color: darken($centered-navigation-background, 3%);
+        background-color: darken($navigation-background, 3%);
         display: inline-block;
-        text-align: right;
+        text-align: center;
         text-decoration: none;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $centered-navigation-background;
-          padding-left: $centered-navigation-submenu-padding;
+          background-color: $navigation-background;
+          padding-left: $navigation-submenu-padding;
           text-align: left;
-          width: $centered-navigation-submenu-width;
+          width: $navigation-submenu-width;
         }
       }
     }
   }
+
+
 }
