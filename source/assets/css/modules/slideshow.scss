@@ -101,3 +101,9 @@ $i: 0;
   right: 0;
   margin-top: -24px;
 }
+
+.slideshow-container-small {
+  @include media($medium-screen) {
+    width: 50%;
+  }
+}
