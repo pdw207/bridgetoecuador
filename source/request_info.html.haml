@@ -1,1 +1,235 @@
 =partial "shared/banner", locals: { photo: "Banner-3-Hike-Ilalo", line_1: t('request_info.headline_1'), line_2: t('request_info.headline_2')}
+
+%section.section-container
+  %form#ss-form{:action => "https://docs.google.com/forms/d/1k0juJWFkq4K7QBlkIJbgWItjYFMUMqMpdMrMKEqJoT8/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
+    %ol.ss-question-list{:role => "list", :style => "padding-left: 0"}
+      .ss-form-question.errorbox-good{:role => "listitem"}
+        .column
+          .ss-item.ss-item-required.ss-radio{:dir => "ltr"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_2130947043"}
+                .ss-q-title
+                  WHICH PROGRAM ARE YOU INTERESTED IN?
+                  %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                  %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                .ss-q-help.ss-secondary-text{:dir => "ltr"}
+              %ul.ss-choices{"aria-label" => "WHICH PROGRAM ARE YOU INTERESTED IN?  ", :role => "radiogroup"}
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_161705906_1.ss-q-radio{"aria-label" => "Homeland Tour", "aria-required" => "true", :name => "entry.161705906", :required => "", :role => "radio", :type => "radio", :value => "Homeland Tour"}/
+                    %span.ss-choice-label Homeland Tour
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_161705906_2.ss-q-radio{"aria-label" => "Spring Break Program", "aria-required" => "true", :name => "entry.161705906", :required => "", :role => "radio", :type => "radio", :value => "Spring Break Program"}/
+                    %span.ss-choice-label Spring Break Program
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_161705906_3.ss-q-radio{"aria-label" => "Summer Program", "aria-required" => "true", :name => "entry.161705906", :required => "", :role => "radio", :type => "radio", :value => "Summer Program"}/
+                    %span.ss-choice-label Summer Program
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_161705906_4.ss-q-radio{"aria-label" => "Community Service", "aria-required" => "true", :name => "entry.161705906", :required => "", :role => "radio", :type => "radio", :value => "Community Service"}/
+                    %span.ss-choice-label Community Service
+                %li.ss-choice-item.additional-comments
+                  %label
+                    %span.ss-choice-item-control.other.goog-inline-block
+                      %input#group_161705906_5.ss-q-radio.ss-q-other-toggle{"aria-required" => "true", :name => "entry.161705906", :required => "", :role => "radio", :type => "radio", :value => "__other_option__"}/
+                    %span.ss-choice-label Other:
+                  %span.ss-q-other-container.goog-inline-block
+                    %input#entry_161705906_other_option_response.ss-q-other{"aria-label" => "Other", :dir => "auto", :name => "entry.161705906.other_option_response", :type => "text", :value => ""}/
+              #2130947043_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-item-required.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_2054932455"}
+                  .ss-q-title
+                    GUARDIAN NAME
+                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_2054932455.ss-q-short{"aria-label" => "FIRST NAME  ", "aria-required" => "true", :dir => "auto", :name => "entry.2054932455", :required => "", :title => "", :type => "text", :value => ""}/
+                #1813418673_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-item-required.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1449729424"}
+                  .ss-q-title
+                    YOUTH NAME
+                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_1449729424.ss-q-short{"aria-label" => "LAST NAME  ", "aria-required" => "true", :dir => "auto", :name => "entry.1449729424", :required => "", :title => "", :type => "text", :value => ""}/
+                #1311924928_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-item-required.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_50120849"}
+                  .ss-q-title
+                    EMAIL ADDRESS
+                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_50120849.ss-q-short{"aria-label" => "EMAIL ADDRESS  ", "aria-required" => "true", :dir => "auto", :name => "entry.50120849", :required => "", :title => "", :type => "text", :value => ""}/
+                #1025335077_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1945979336"}
+                  .ss-q-title
+                    HOME PHONE NUMBER
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_1945979336.ss-q-short{"aria-label" => "HOME PHONE NUMBER  ", :dir => "auto", :name => "entry.1945979336", :title => "", :type => "text", :value => ""}/
+                #854649150_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_792001243"}
+                  .ss-q-title
+                    CELL PHONE NUMBER
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_792001243.ss-q-short{"aria-label" => "CELL PHONE NUMBER  ", :dir => "auto", :name => "entry.792001243", :title => "", :type => "text", :value => ""}/
+                #140285472_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-item-required.ss-radio{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_213436759"}
+                  .ss-q-title
+                    HOW WOULD YOU LIKE TO BE CONTACTED?
+                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %ul.ss-choices{"aria-label" => "HOW WOULD YOU LIKE TO BE CONTACTED?  ", :role => "radiogroup"}
+                  %li.ss-choice-item
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_830836734_1.ss-q-radio{"aria-label" => "Email", "aria-required" => "true", :name => "entry.830836734", :required => "", :role => "radio", :type => "radio", :value => "Email"}/
+                      %span.ss-choice-label Email
+                  %li.ss-choice-item
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_830836734_2.ss-q-radio{"aria-label" => "Phone", "aria-required" => "true", :name => "entry.830836734", :required => "", :role => "radio", :type => "radio", :value => "Phone"}/
+                      %span.ss-choice-label Phone
+                #213436759_errorMessage.error-message
+                .required-message This is a required question
+        .column
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_399861264"}
+                  .ss-q-title
+                    STREET ADDRESS
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_399861264.ss-q-short{"aria-label" => "STREET ADDRESS Include apartment or unit number if applicable. ", :dir => "auto", :name => "entry.399861264", :title => "", :type => "text", :value => ""}/
+                #2009709265_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1002391981"}
+                  .ss-q-title
+                    CITY
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_1002391981.ss-q-short{"aria-label" => "CITY  ", :dir => "auto", :name => "entry.1002391981", :title => "", :type => "text", :value => ""}/
+                #1135858353_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1538164931"}
+                  .ss-q-title
+                    STATE
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_1538164931.ss-q-short{"aria-label" => "STATE  ", :dir => "auto", :name => "entry.1538164931", :title => "", :type => "text", :value => ""}/
+                #25836537_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1519974438"}
+                  .ss-q-title
+                    ZIPCODE
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_1519974438.ss-q-short{"aria-label" => "ZIPCODE  ", :dir => "auto", :name => "entry.1519974438", :title => "", :type => "text", :value => ""}/
+                #1580034819_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-text{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_475343218"}
+                  .ss-q-title
+                    YOUTH AGE
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %input#entry_475343218.ss-q-short{"aria-label" => "AGE  ", :dir => "auto", :name => "entry.475343218", :title => "", :type => "text", :value => ""}/
+                #1842142295_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-radio{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_1913186836"}
+                  .ss-q-title
+                    YOUTH GENDER
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %ul.ss-choices{"aria-label" => "GENDER  ", :role => "radiogroup"}
+                  %li.ss-choice-item.gender
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_851194677_1.ss-q-radio{"aria-label" => "Male", :name => "entry.851194677", :role => "radio", :type => "radio", :value => "Male"}/
+                      %span.ss-choice-label Male
+                  %li.ss-choice-item.gender
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_851194677_2.ss-q-radio{"aria-label" => "Female", :name => "entry.851194677", :role => "radio", :type => "radio", :value => "Female"}/
+                      %span.ss-choice-label Female
+                  %li.ss-choice-item.additional-comments
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_851194677_3.ss-q-radio.ss-q-other-toggle{:name => "entry.851194677", :role => "radio", :type => "radio", :value => "__other_option__"}/
+                      %span.ss-choice-label Other:
+                    %span.ss-q-other-container.goog-inline-block
+                      %input#entry_851194677_other_option_response.ss-q-other{"aria-label" => "Other", :dir => "auto", :name => "entry.851194677.other_option_response", :type => "text", :value => ""}/
+                #1913186836_errorMessage.error-message
+                .required-message This is a required question
+          .ss-form-question.errorbox-good{:role => "listitem"}
+            .ss-item.ss-radio{:dir => "ltr"}
+              .ss-form-entry
+                %label.ss-q-item-label{:for => "entry_41433323"}
+                  .ss-q-title
+                    YOUTH SPANISH LANGUAGE SKILLS
+                  .ss-q-help.ss-secondary-text{:dir => "ltr"}
+                %ul.ss-choices{"aria-label" => "LEVEL OF SPANISH LANGUAGE SKILLS  ", :role => "radiogroup"}
+                  %li.ss-choice-item
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_1959427365_1.ss-q-radio{"aria-label" => "Beginner", :name => "entry.1959427365", :role => "radio", :type => "radio", :value => "Beginner"}/
+                      %span.ss-choice-label Beginner
+                  %li.ss-choice-item
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_1959427365_2.ss-q-radio{"aria-label" => "Intermediate", :name => "entry.1959427365", :role => "radio", :type => "radio", :value => "Intermediate"}/
+                      %span.ss-choice-label Intermediate
+                  %li.ss-choice-item
+                    %label
+                      %span.ss-choice-item-control.goog-inline-block
+                        %input#group_1959427365_3.ss-q-radio{"aria-label" => "Advanced", :name => "entry.1959427365", :role => "radio", :type => "radio", :value => "Advanced"}/
+                      %span.ss-choice-label Advanced
+                #41433323_errorMessage.error-message
+                .required-message This is a required question
+        %input{:name => "draftResponse", :type => "hidden", :value => "[,,\"8824649451996434883\"]\r\n"}/
+        %input{:name => "pageHistory", :type => "hidden", :value => "0"}/
+        %input{:name => "fbzx", :type => "hidden", :value => "8824649451996434883"}/
+    .ss-item.ss-navigate
+      %table#navigation-table
+        %tbody
+          %tr
+            %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+              %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}/

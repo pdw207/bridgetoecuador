@@ -1,0 +1,48 @@
+.required-message {
+  display: none;
+
+}
+.error-message, .required-message, .ss-required-asterisk {
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.error, .required, .errorbox-bad {
+  border-color: rgb(196,59,29);
+}
+
+label {
+  display: inline;
+}
+
+.ss-choice-item {
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+}
+
+.ss-form-entry {
+  margin-top: 25px;
+}
+
+.ss-q-title {
+  padding-bottom: 10px;
+}
+
+#navigation-table td {
+  border: none;
+
+  input {
+    position: relative;
+    right: 4px;
+    top: 20px;
+  }
+}
+
+//Custom Styles
+
+.additional-comments {
+  width: 100%;
+}

@@ -57,6 +57,17 @@
   clear: both;
 }
 
+.column {
+  @include span-columns(12);
+  @include media($medium-screen) {
+    @include span-columns(6);
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+
 // Utility Classes
 
 .desktop {
