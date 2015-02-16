@@ -23,15 +23,11 @@
   margin: 1em auto 4em auto;
 }
 
-.intro {
-  font-size: 1.20em;
-  text-align: justify;
-  margin-top: 50px;
-}
-
 .lead-intro {
   margin: 0 auto;
+  text-align: justify;
   @include media($medium-screen) {
     margin: 100px auto;
+    font-size: 1.20em;
   }
 }

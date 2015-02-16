@@ -2,6 +2,7 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);
+  margin-bottom: 50px;
 }
 
 .card {
@@ -54,12 +55,13 @@
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
+    font-size: 1.2em;
     line-height: 1.5em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
   }
 
   .card-copy {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.5em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
 

@@ -12,13 +12,6 @@
           -schedule.each do |line|
             %tr
               %td= line
-  -unless costs.blank?
-    %li.tab-header-and-content
-      %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.costs')
-      .tab-content
-        %ul
-          -costs.each do |list_item|
-            %li= list_item
 
   -unless trips.blank?
     %li.tab-header-and-content
@@ -26,3 +19,10 @@
       .tab-content
         -trips.each do |paragraph|
           %p= paragraph
+  -unless costs.blank?
+    %li.tab-header-and-content
+      %a.tab-link{:href => "javascript:void(0)"}= t('programs.tab-heading.costs')
+      .tab-content
+        -costs.each do |list_item|
+          %p= list_item
+

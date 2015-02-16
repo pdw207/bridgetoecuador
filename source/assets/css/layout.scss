@@ -33,8 +33,11 @@
 }
 
 .bio-text {
-  padding: 20px;
   @include span-columns(12);
+  padding-bottom: 50px;
+  p {
+    font-size: 0.95em;
+  }
 
   @include media($medium-screen) {
     @include span-columns(5 of 8);
@@ -55,8 +58,14 @@
   max-width: 800px;
   margin: 75px auto;
   clear: both;
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
 }
 
+.contact-us {
+  margin-bottom: 100px;
+}
 .column {
   @include span-columns(12);
   @include media($medium-screen) {
@@ -82,4 +91,8 @@
   @include media($medium-screen) {
     display: none !important;
   }
+}
+
+.hide {
+  display: none;
 }

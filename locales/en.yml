@@ -18,10 +18,10 @@ en:
     programs: "Programs"
     tours:
       title: "Homeland Tours"
-      body: "Adoptees can reconnect with their language and culture through specific programs for individuals or families with the option to conduct a birth family search"
+      body: "Adoptees reconnect with their language and culture through specific programs for individuals or families with the option to conduct a birth family search."
     camps:
       title: "Camps"
-      body: "Teenagers can spend school vacations making new friends, learning Spanish, traveling to exciting new places, and helping others in a challenging yet safe environment."
+      body: "Teenagers spend school vacations making new friends, learning Spanish, traveling to exciting new places, and helping others in a challenging yet safe environment."
     service:
       title: "Community Service"
       body: "Earn community service credit through volunteer experiences that range from caring for orphaned children to teaching art and small construction projects."
@@ -35,9 +35,16 @@ en:
         person: "Lorem ipsum"
   about_us:
     headline_1: "Meet"
-    headline_2: "our Leadership"
-    heading: "Meet our Director"
-    note_from_director: "A native Ecuadorian, Natalia Lopez has dedicated her career to working with youth and families. For 20 years she helped to place children for adoption from the south of Ecuador, including the cities of Cuenca and Loja, to the United States, Denmark, and Italy. Natalia has worked with many different orphanages in Cuenca and was the Director of Casa Hogar Fafecorp for 5 years. In 2012 she became the Director of Four Rivers Camps and is now leading innovative social, cultural, and educational programs as the Director of Bridge to Ecuador. Natalia and her family have been hosting international students from the United States, China, and across Europe for over 20 years."
+    headline_2: "our Director"
+    heading: "Executive Director"
+    note_from_director: |
+      A native Ecuadorian, Natalia Lopez has dedicated her career to working with youth and families.
+      For 20 years she helped to place children for adoption from the south of Ecuador, including the cities
+      of Cuenca and Loja, to the United States, Denmark, and Italy.</p><p> Natalia has worked with many different
+      orphanages in Cuenca and was the Director of Casa Hogar Fafecorp for 5 years. In 2012 she became the
+      Director of Four Rivers Camps and is now leading innovative social, cultural, and educational programs
+      as the Director of Bridge to Ecuador.</p><p> Natalia and her family have been hosting international students
+      from the United States, China, and across Europe for over 20 years.</p>
   programs:
     headline_1: "Build your"
     headline_2: "Bridge"

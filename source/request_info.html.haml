@@ -1,7 +1,8 @@
 =partial "shared/banner", locals: { photo: "Banner-3-Hike-Ilalo", line_1: t('request_info.headline_1'), line_2: t('request_info.headline_2')}
 
-%section.section-container
-  %form#ss-form{:action => "https://docs.google.com/forms/d/1k0juJWFkq4K7QBlkIJbgWItjYFMUMqMpdMrMKEqJoT8/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
+%iframe#thank-you.hide{:name => "thank-you-redirect"}
+%section.section-container.contact-us
+  %form#ss-form{:action => "https://docs.google.com/forms/d/1k0juJWFkq4K7QBlkIJbgWItjYFMUMqMpdMrMKEqJoT8/formResponse", :method => "POST", :onsubmit => "$('#modal-1').prop( 'checked', true );", :target => "thank-you-redirect"}
     %ol.ss-question-list{:role => "list", :style => "padding-left: 0"}
       .ss-form-question.errorbox-good{:role => "listitem"}
         .column
@@ -157,7 +158,7 @@
               .ss-form-entry
                 %label.ss-q-item-label{:for => "entry_1519974438"}
                   .ss-q-title
-                    ZIPCODE
+                    ZIP CODE
                   .ss-q-help.ss-secondary-text{:dir => "ltr"}
                 %input#entry_1519974438.ss-q-short{"aria-label" => "ZIPCODE  ", :dir => "auto", :name => "entry.1519974438", :title => "", :type => "text", :value => ""}/
                 #1580034819_errorMessage.error-message
@@ -177,7 +178,7 @@
               .ss-form-entry
                 %label.ss-q-item-label{:for => "entry_1913186836"}
                   .ss-q-title
-                    YOUTH GENDER
+                    YOUTH SEX
                   .ss-q-help.ss-secondary-text{:dir => "ltr"}
                 %ul.ss-choices{"aria-label" => "GENDER  ", :role => "radiogroup"}
                   %li.ss-choice-item.gender
@@ -190,13 +191,6 @@
                       %span.ss-choice-item-control.goog-inline-block
                         %input#group_851194677_2.ss-q-radio{"aria-label" => "Female", :name => "entry.851194677", :role => "radio", :type => "radio", :value => "Female"}/
                       %span.ss-choice-label Female
-                  %li.ss-choice-item.additional-comments
-                    %label
-                      %span.ss-choice-item-control.goog-inline-block
-                        %input#group_851194677_3.ss-q-radio.ss-q-other-toggle{:name => "entry.851194677", :role => "radio", :type => "radio", :value => "__other_option__"}/
-                      %span.ss-choice-label Other:
-                    %span.ss-q-other-container.goog-inline-block
-                      %input#entry_851194677_other_option_response.ss-q-other{"aria-label" => "Other", :dir => "auto", :name => "entry.851194677.other_option_response", :type => "text", :value => ""}/
                 #1913186836_errorMessage.error-message
                 .required-message This is a required question
           .ss-form-question.errorbox-good{:role => "listitem"}
@@ -234,8 +228,6 @@
             %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
               %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}/
 .modal
-  %label{:for => "modal-1"}
-    .modal-trigger Sample Submit
   %input#modal-1.modal-state{:type => "checkbox"}/
   .modal-window
     .modal-inner
