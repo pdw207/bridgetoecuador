@@ -1,5 +1,6 @@
 programs:
   - title: Community Service
+    slug: community_service
     tag: service
     slides: 3
     highlights:
@@ -22,6 +23,7 @@ programs:
       - 8:00 Evening Activity, Theatre Outing, or Cultural Festival
 
   - title: Vacation Camps
+    slug: vacation_camps
     tag: camps
     slides: 6
     highlights:
@@ -69,6 +71,7 @@ programs:
       - "For all the programs we ask for an initial deposit required after the registration and authorization form has been completed and sent to us confirming participation in one of our programs."
 
   - title: Homeland Tours
+    slug: homeland_tours
     tag: culture
     slides: 3
     highlights:
