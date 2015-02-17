@@ -1,7 +1,8 @@
 require 'dotenv'
 require 'pry'
+
 Dotenv.load
-binding.pry
+
 #Livereload
 activate :livereload
 
@@ -65,9 +66,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+  ignore 'assets/svg/*'
+  ignore 'assets/css/modules/*'
 end
-
-gem 'middleman-s3_sync'
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = ENV['S3_BUCKET'] # The name of the S3 bucket you are targetting. This is globally unique.

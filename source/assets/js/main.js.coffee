@@ -1,13 +1,3 @@
-$ ->
-  masterInit()
-
-masterInit = ->
-	Global.init()
-
-Global =
-	init: ->
-		console.info 'js initiated!!!'
-
 $("#modal-1").on "change", ->
   if $(this).is(":checked")
     $("body").addClass "modal-open"
