@@ -9,6 +9,7 @@ description: Schedule a Trip to Ecuador
   %h2.heading.mobile= program.title
   =partial 'shared/slideshow', locals: {set: program.tag, total_slides: program.slides}
   .highlights
+    %i= partial "assets/svg/#{program.icon}"
     %ul
       -program.highlights.each do |highlight|
         %li= highlight

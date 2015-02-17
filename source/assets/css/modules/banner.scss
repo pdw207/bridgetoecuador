@@ -5,7 +5,7 @@
 
   .cover {
     @extend .absolute-center;
-    height: 100px !important;
+    height: 1.5em !important;
     font-style: inherit;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
