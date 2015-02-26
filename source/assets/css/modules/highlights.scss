@@ -12,10 +12,12 @@
   @include media($medium-screen) {
     font-size: 1.2em;
   }
+
   i {
     display: block;
     text-align: center;
   }
+
   ul {
     display: block;
     vertical-align: middle;
@@ -26,4 +28,9 @@
       padding: 10px 0;
     }
   }
+}
+
+.highlights-inner {
+  display: table-cell;
+  vertical-align: middle;
 }
