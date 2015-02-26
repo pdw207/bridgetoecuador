@@ -4,8 +4,12 @@
   width: 100%; /* for IE 6 */
 
   .cover {
-    @extend .absolute-center;
-    height: 1.5em !important;
+    width: 12em;
+    height: 1.3em;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     font-style: inherit;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
@@ -13,7 +17,7 @@
     color: white;
     text-align: center;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   h1 {

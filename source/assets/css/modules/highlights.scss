@@ -1,6 +1,6 @@
 .highlights {
+  @extend .testimonials;
   display: table;
-  width: 30%;
   margin: auto;
   position: static;
   font-size: 1em;
@@ -9,8 +9,10 @@
   padding: 1em;
   border: 1px solid #ddd;
   background: #f7f7f7;
+
   @include media($medium-screen) {
     font-size: 1.2em;
+    width: 30%;
   }
 
   i {
