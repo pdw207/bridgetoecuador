@@ -1,0 +1,17 @@
+.desktop {
+  display: none !important;
+  @include media($medium-screen) {
+    display: block !important;
+  }
+}
+
+.mobile {
+  display: block !important;
+  @include media($medium-screen) {
+    display: none !important;
+  }
+}
+
+.hide {
+  display: none;
+}

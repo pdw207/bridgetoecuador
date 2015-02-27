@@ -50,21 +50,6 @@
   }
 }
 
-.highlights {
-  @extend .testimonials;
-}
-
-.tabs {
-  margin: 75px auto;
-  clear: both;
-  p {
-    font-family: 'Ubuntu', sans-serif;
-  }
-}
-
-.contact-us {
-  margin-bottom: 100px;
-}
 .column {
   @include span-columns(12);
   @include media($medium-screen) {
@@ -75,32 +60,16 @@
   }
 }
 
+//other
+.contact-us {
+  margin-bottom: 100px;
+}
 
-// Utility Classes
-
-.desktop {
-  display: none !important;
-  @include media($medium-screen) {
-    display: block !important;
+.tabs {
+  margin: 75px auto;
+  clear: both;
+  p {
+    font-family: 'Ubuntu', sans-serif;
   }
 }
 
-.mobile {
-  display: block !important;
-  @include media($medium-screen) {
-    display: none !important;
-  }
-}
-
-.hide {
-  display: none;
-}
-
-.absolute-center {
-  width: 50%;
-  height: 50%;
-  overflow: auto;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
